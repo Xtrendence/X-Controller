@@ -1,5 +1,5 @@
 // Changeable Variables
-const userPasscode = "";
+const userPasscode = "0000";
 const scriptPath = process.cwd() + "\\server.js";
 const port = 1738;
 
