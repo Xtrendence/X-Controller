@@ -1,0 +1,224 @@
+:root {
+	--shadow-dark:0 6px 10px rgba(40,40,40,0.2);
+	--shadow-darker:0 6px 10px rgba(40,40,40,0.4);
+	--font-family:"Helvetica Neue", "Lucida Grande", "Arial", "Verdana", "Tahoma", sans-serif;
+}
+html {
+	font-family:var(--font-family);
+}
+body {
+	background:rgb(20,20,20);
+	color:rgb(75,75,75);
+	margin:0;
+	padding:0;
+	overflow-x:hidden;
+	overflow-y:scroll;
+	scroll-behavior:smooth;
+	-webkit-overflow-scrolling:touch;
+}
+button, input {
+	border:none;
+	outline:none;
+	transition:background 0.15s, color 0.15s;
+}
+.noselect {
+	-webkit-user-select:none;
+	-khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	outline:none;
+}
+.hidden {
+	display:none;
+	visibility:hidden;
+	position:absolute;
+	z-index:-1;
+}
+::-webkit-scrollbar {
+	display:block;
+	width:4px;
+	background:rgba(60,60,60,0);
+}
+::-webkit-scrollbar-thumb {
+	border-radius:5px;
+	background:rgb(75,75,75);
+}
+::-webkit-scrollbar-thumb:hover {
+	background:rgb(100,100,100);
+}
+::-webkit-scrollbar-track {
+	background:rgb(40,40,40);
+}
+
+.main-wrapper {
+	display:block;
+	width:100%;
+	text-align:center;
+	font-size:0;
+	padding:20px 0 0 0;
+}
+.passcode-wrapper {
+	background:rgb(40,40,40);
+	display:inline-block;
+	font-size:0;
+	padding:20px;
+	border-radius:10px;
+	width:252px;
+	height:420px;
+	vertical-align:top;
+}
+.passcode-text {
+	display:block;
+	font-size:24px;
+	color:rgb(255,255,255);
+	font-weight:bold;
+	background:rgb(60,60,60);
+	width:252px;
+	height:64px;
+	margin-bottom:20px;
+	border-radius:10px;
+	text-align:center;
+	line-height:64px;
+	letter-spacing:5px;
+}
+.passcode-button {
+	background:rgb(60,60,60);
+	font-size:24px;
+	color:rgb(255,255,255);
+	font-weight:bold;
+	border-radius:50%;
+	padding:10px;
+	width:64px;
+	height:64px;
+	margin:10px;
+	vertical-align:top;
+	cursor:pointer;
+}
+#desktop .passcode-button:hover {
+	background:rgb(0,150,255);
+}
+.icon {
+	fill:rgb(255,255,255);
+	width:32px;
+	height:32px;
+	margin-top:5px;
+}
+
+.actions-wrapper {
+	position:relative;
+	display:inline-block;
+	vertical-align:top;
+	height:460px;
+	width:100px;
+	margin-left:20px;
+}
+.action-button {
+	display:block;
+	width:100%;
+	height:100px;
+	margin-bottom:20px;
+	background:rgb(40,40,40);
+	cursor:pointer;
+	border-radius:10px;
+}
+#desktop .action-button:hover {
+	background:rgb(0,150,255);
+}
+.action-button svg {
+	fill:rgb(255,255,255);
+	width:54px;
+	height:54px;
+	margin-top:5px;
+}
+
+.settings-wrapper {
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:100%;
+	z-index:3;
+	display:none;
+	background:rgb(60,60,60);
+	text-align:left;
+}
+.close-button {
+	display:block;
+	width:64px;
+	height:64px;
+	background:rgb(40,40,40);
+	cursor:pointer;
+	border-radius:50%;
+	position:absolute;
+	top:20px;
+	right:20px;
+}
+#desktop .close-button:hover {
+	background:rgb(0,150,255);
+}
+.close-button svg {
+	fill:rgb(255,255,255);
+	width:48px;
+	height:48px;
+	margin-top:5px;
+}
+.settings-button {
+	background:rgb(40,40,40);
+	color:rgb(255,255,255);
+	font-weight:bold;
+	font-size:20px;
+	height:60px;
+	padding:0 20px 0 20px;
+	margin:20px 0 20px 20px;
+	border-radius:10px;
+	cursor:pointer;
+}
+#desktop .settings-button:hover {
+	background:rgb(0,150,255);
+}
+
+.output-wrapper {
+	position:relative;
+	font-size:16px;
+	margin:20px auto 0 auto;
+	padding-bottom:10px;
+	color:rgb(200,200,200);
+	overflow:auto;
+	width:420px;
+}
+
+.app-row {
+	font-size:16px;
+	padding:10px 0 10px 0;
+	display:block;
+	width:100%;
+}
+.app-name {
+	margin:0 10px 0 10px;
+	width:220px;
+	display:inline-block;
+	text-align:left;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	white-space:nowrap;
+}
+.app-pid {
+	margin:0 10px 0 10px;
+	width:60px;
+	display:inline-block;
+	text-align:left;
+}
+.app-button {
+	background:rgb(40,40,40);
+	color:rgb(255,255,255);
+	font-weight:bold;
+	font-size:16px;
+	width:100px;
+	height:30px;
+	border-radius:5px;
+	cursor:pointer;
+}
+#desktop .app-button:hover {
+	background:rgb(0,150,255);
+}
