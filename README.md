@@ -1,5 +1,7 @@
 # X:/Controller
 
+⚠️ This project is being superseded by [XRC](https://github.com/Xtrendence/XRC). ⚠️
+
 X:/Controller is a simple and (relatively) safe remote access tool with limited functionality (for security reasons). It currently only works on Windows. It's intended to be used as a service (more on this below) so it can run in the background. When it's running, you can access the web interface on any device on the same network, and restart, or shutdown the device that's running it. You can also use it as a barebones task manager that can end processes.
 
 In case you're curious about its intended use case, I sometimes stay up late and I tend to be too tired to get up and turn off my PC, so with this running in the background, I can use my phone to turn it off. It's also useful if your computer freezes, and you can't even access the task manager. With X:/Controller, you can end processes without having to use your computer.
